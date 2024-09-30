@@ -194,20 +194,31 @@ img{
     width: 50%;
     height: 50%;
 }
-
-
-
-
-
-
  */
 
 
 
 
-.contenedor-perfi{}
 
 
+
+
+
+
+.contenedor-perfi{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    align-content: center;
+}
+
+
+
+.image {
+    border-radius: 100%;
+    width: 120px;
+    height: 120x;
+}
 
 
 
