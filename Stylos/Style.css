@@ -254,7 +254,24 @@ img{
     background-color: #121212;
     padding: 10px;
     padding-top: 10px;
+    overflow-y: scroll;
 }
+
+/* barra de navegacion */
+
+::-webkit-scrollbar{
+    width: 8px;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+
+.sidebar::-webkit-scrollbar-thumb{
+    background-color: #717171;
+} 
 
 
 .sidebar-items{
