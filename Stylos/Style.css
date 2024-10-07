@@ -425,8 +425,10 @@ p,a{
 
 .video-container{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(250,1fr));
-    grid-template-rows: repeat(auto-fill,minmax(250,1fr));
+    grid-template-columns: 325px 325px 325px 320px 320px ;
+    grid-template-rows: auto;
+    /* grid-template-columns: repeat(auto-fill,minmax(250,4fr));
+    grid-template-rows: repeat(auto-fill,minmax(250,4fr)); */
     /* grid-template-rows: max-content; */
     /* grid-template-rows: repeat(auto-fit,minmax(250,1fr)); */
     height: calc(100vh -118px);
