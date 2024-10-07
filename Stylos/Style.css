@@ -66,6 +66,7 @@ h1{
     padding-left: 10px;
     padding-top: 10px;
     justify-content: space-between;
+    gap: 6px;  /*pusimos un gap para darle espacio entre el item*/
 }
 .logo{
     display: flex;
@@ -556,5 +557,16 @@ p,a{
     }
     .sidebar-item{
         padding:  0 15px;
+    }
+    .chips-wrapper{
+        max-width: 100%;
+    }
+
+
+}
+
+@media (max-width:800px){
+    .search-container{
+        display: none;
     }
 }
