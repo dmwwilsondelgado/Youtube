@@ -1,0 +1,119 @@
+/* Container video  */
+
+
+.video-container{
+    display: grid;
+    grid-template-columns: 325px 325px 325px 320px 320px ;
+    grid-template-rows: auto;
+    /* grid-template-columns: repeat(auto-fill,minmax(250,4fr));
+    grid-template-rows: repeat(auto-fill,minmax(250,4fr)); */
+    /* grid-template-rows: max-content; */
+    /* grid-template-rows: repeat(auto-fit,minmax(250,1fr)); */
+    height: calc(100vh -118px);
+    gap: 18px;
+    padding: 20px;
+    background-color: #181818;
+    overflow-y: scroll;
+}
+
+
+
+
+
+/* echo por mi  */
+/* .video-box{
+    display: flex;
+    height: 100px;
+    width: 100px;
+} */
+
+
+.video-container-cover{
+    position: relative;
+    transition: 0.5s;
+}
+
+.video-content{
+    margin-bottom: 25px;
+    position: relative;
+    width: 320px;
+    padding: 8px;
+    border-radius: 12px;
+    transition: 1s;
+}
+
+
+
+.video-content:hover{
+    background-color: #717171;
+    transition: 0.5s;
+
+}
+.video-box{
+    /* position: relative; */
+    /* width: auto; */
+    width: 300px;
+    height: 200px;
+    display: block;
+}
+
+.video-box img{
+    object-fit: cover;
+    height: 190px;
+    border-radius: 12px;
+    width: 305px;
+}
+
+
+
+
+
+
+/* contenido del video  */
+
+.video-detail{
+    display: flex;
+    color: #fff;
+    padding-top: 12px;
+
+}
+
+.chanel-logo{
+    position: relative;
+    min-width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.detail{
+    margin-left: 12px;
+}
+
+.title{
+    font-size: 0.9rem;
+}
+
+.chanel-name{
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #aaa;
+}
+
+
+.views-up-load{
+    display: flex;
+    font-family: 0.6rem;
+    margin-top: 4px;
+    color: #aaa;
+    /* gap: ; */
+}
+
+
+.upload{
+    margin-left: 8px;
+}
+
+
+
