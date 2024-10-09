@@ -1,0 +1,16 @@
+:root{
+    --blanco:#fff;
+    --gris_claro:#aaaa;
+    --gris_semitransparente:rgba(255,255 ,255 ,0.2);
+    --gris_oscuro_claro:#717171;
+    --negro_carbon:#202020;
+    --negro_ebano:#121212;
+    --blanco_humo:#f2f2f2;
+    --gris_pizarra:#313131;
+    --gris_acero:#4a4a4a;
+    --gris_sombra:#212121;
+    --negro_profundo:#181818;
+    --gris_slate:#373737;
+    --gris_perla:#d4d4d4;
+    --gris_neutro:#aaa;
+  }

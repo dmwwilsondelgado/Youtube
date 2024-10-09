@@ -1,641 +1,622 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube</title>
-    <link rel="stylesheet" href="/Style.css">
-    <link rel="shortcut icon" href="img (1)/img/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
-
-
-/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon">
 </head>
 <body>
-    <!-- header  -->/*
-    <header class="header">
-
-        <!-- logo  -->
-        <div class="logo">
-            <div class="logo-img">
-                <div class="logo-container">
-                    <a href="#">
-                        <i class="ri-menu-line"></i> 
-                    </a>
-                    <img src="img (1)/img/logo.png" alt="logo"> 
-                    <h1>Youtube</h1>
-                </div>
-            </div>
+  <div class="youtube">
+    <!-- Header -->
+    <header class="youtube__header">
+      <div class="youtube__logo-container">
+        <a class="youtube__icono_menu" href="#">
+          <i class="ri-menu-line"></i>
+        </a>
+        <div class="youtube__logo">
+          <div class="youtube__logo-contenedor">
+            <img class="youtube__logo-img" src="imagenes/logo.png" alt="logo_youtube">
+          </div>
+          <h1 class="youtube__logo-titulo">Youtube</h1>
         </div>
-
-
-
-
-        <!-- barra de busqueda  -->
-        <div class="search-container">
-            <form action="">
-                <input type="text" placeholder="Buscar">
-                <button><i class="ri-search-line"></i></button>
-            </form>
-            <button><i class="ri-mic-line"></i></button>
+      </div>
+      <!-- contenedor busqueda -->
+      <div class="youtube__search-container">
+        <form class="youtube__search-form" action="">
+          <input class="youtube__search-input" type="text" placeholder="Buscar">
+          <button class="youtube__search-button">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+        <button class="youtube__mic-button">
+          <i class="ri-mic-line"></i>
+        </button>
+      </div>
+      <!-- contenedor perfil -->
+      <div class="youtube__profile-container">
+        <a class="youtube__profile-container_icons youtube__profile-container_icons--fondo_gris_acero" href="#">
+          <i class="ri-video-add-line"></i>
+        </a>
+        <a class="youtube__profile-container_icons youtube__profile-container_icons--fondo_gris_acero" href="#">
+          <i class="ri-notification-2-line"></i>
+        </a>
+        <div class="youtube__profile-box">
+          <img class="youtube__profile-image" src="imagenes/foto_perfil.jpg" alt="foto_perfil">
         </div>
-
-
-        <!-- busqueda -->
-        <div class="contenedor-perfil">
-            <a href="#">
-                <i class="ri-video-line"></i>
-            </a>
-            <a href="#">
-                <i class="ri-notification-line"></i>
-            </a>
-            <a href="#">
-                <img   class="image" src="img (1)/img/itachi.jpg" alt="">
-            </a>
-        </div>
- 
-
-       
-
-        <!-- <div class="profile-container">
-            <a href="#"></a>
-        </div> -->
-
-
+      </div>
     </header>
-
-
-
-
-
-    <!-- side bar -->
-    <aside class="sidebar">
-        <div class="sidebar-items">
-            <a href="#" class="sidebar-item">
-                <i class="ri-home-3-line"></i><samp>HOME</samp>
-            </a>
-            <a href="#" class="sidebar-item">
-                <i class="ri-compass-3-line"></i><samp>EXPLORE</samp>
-            </a>
-            <a href="#" class="sidebar-item">
-                <i class="ri-wireless-charging-line"></i><samp>SHORTS</samp>
-            </a>
-
-            <a href="#" class="sidebar-item">
-                <i class="ri-mail-volume-fill"></i><samp>SUBSCRIPTION</samp>
-            </a>
-        </div>
-
-        <hr class="linea-sidebar">
-
-        <a href="#" class="sidebar-item">
-            <i class="ri-links-line"></i><samp>HOME</samp>
+    <!-- Sidebar -->
+    <aside class="youtube__sidebar">
+      <div class="youtube__sidebar-items">
+        <a href="#" class="youtube__sidebar-item youtube__sidebar-item--fondo_gris-acero">
+          <i class="youtube__sidebar-icono ri-home-line"></i><span>Home</span>
         </a>
-        <a href="#" class="sidebar-item">
-            <i class="ri-history-line"></i><samp>HYSTORY</samp>
+        <a href="#" class="youtube__sidebar-item youtube__sidebar-item--fondo_gris-acero">
+          <i class="youtube__sidebar-icono ri-compass-3-line"></i><span>Explorer</span>
         </a>
-        <a href="#" class="sidebar-item">
-            <i class="ri-video-line"></i><samp>YOUR VIDEOS</samp>
+        <a href="#" class="youtube__sidebar-item youtube__sidebar-item--fondo_gris-acero">
+          <i class="youtube__sidebar-icono ri-wireless-charging-line"></i><span>Shorts</span>
         </a>
-
-        <a href="#" class="sidebar-item">
-            <i class="ri-time-line"></i><samp>ALL VIDEO</samp>
+        <a href="#" class="youtube__sidebar-item youtube__sidebar-item--fondo_gris-acero">
+          <i class="youtube__sidebar-icono ri-rss-fill"></i><span>Suscriptions</span>
         </a>
-        <a href="#" class="sidebar-item">
-            <i class="ri-arrow-down-fill"></i><samp>ALL VIDEO</samp>
+        <hr class="youtube__sidebar-linea-separador">
+        <a href="#" class="youtube__sidebar-item youtube__sidebar-item--fondo_gris-acero">
+          <i class="youtube__sidebar-icono ri-links-line"></i><span>Library</span>
         </a>
-        <a href="#" class="sidebar-item">
-            <i class="ri-play-list-2-line"></i><samp>ALL VIDEO</samp>
+        <a href="#" class="youtube__sidebar-item youtube__sidebar-item--fondo_gris-acero">
+          <i class="youtube__sidebar-icono ri-history-line"></i><span>History</span>
         </a>
-        
-
-        <hr class="linea-sidebar">
-
-        <h4 class="texto-sidebar">  MORE FROM YOUTUBE </h4>
-
-
-
-        <a href="#" class="sidebar-item">
-            <i class="ri-keyboard-box-line"></i><samp>GAMING</samp>
+        <a href="#" class="youtube__sidebar-item youtube__sidebar-item--fondo_gris-acero">
+          <i class="youtube__sidebar-icono ri-video-line"></i><span>Your videos</span>
         </a>
-        <a href="#" class="sidebar-item">
-            <i class="ri-live-line"></i><samp>LIVE</samp>
+        <a href="#" class="youtube__sidebar-item youtube__sidebar-item--fondo_gris-acero">
+          <i class="youtube__sidebar-icono ri-time-line"></i><span>Watch videos</span>
         </a>
-        <a href="#" class="sidebar-item">
-            <i class="ri-award-line"></i><samp>ALL VIDEO</samp>
+        <a href="#" class="youtube__sidebar-item youtube__sidebar-item--fondo_gris-acero">
+          <i class="youtube__sidebar-icono ri-play-list-2-line"></i><span>All videos</span>
         </a>
-
-
-        <hr class="linea-sidebar">
-
-
-
-        <a href="#" class="sidebar-item">
-            <i class="ri-settings-4-line"></i><samp>SETTING</samp>
+        <a href="#" class="youtube__sidebar-item youtube__sidebar-item--fondo_gris-acero">
+          <i class="youtube__sidebar-icono ri-arrow-down-line"></i><span>Show more</span>
         </a>
-        <a href="#" class="sidebar-item">
-            <i class="ri-flag-line"></i><samp>REPORT HISTORY</samp>
+        <hr class="youtube__sidebar-linea-separador">
+        <h4 class="youtube__sidebar-title">MORE FROM YOUTUBE</h4>
+        <a href="#" class="youtube__sidebar-item youtube__sidebar-item--fondo_gris-acero">
+          <i class="youtube__sidebar-icono ri-keyboard-box-line"></i><span>Gaming</span>
         </a>
-        <a href="#" class="sidebar-item">
-            <i class="ri-question-line"></i><samp>HELP</samp>
+        <a href="#" class="youtube__sidebar-item youtube__sidebar-item--fondo_gris-acero">
+          <i class="youtube__sidebar-icono ri-live-line"></i><span>Live</span>
         </a>
-        <a href="#" class="sidebar-item">
-            <i class="ri-feedback-line"></i><samp>SEND FEEDBAKC</samp>
+        <a href="#" class="youtube__sidebar-item youtube__sidebar-item--fondo_gris-acero">
+          <i class="youtube__sidebar-icono ri-award-line"></i><span>Sports</span>
         </a>
-
-
-
-        <hr class="linea-sidebar">
-
-
-
-
-
-
+        <hr class="youtube__sidebar-linea-separador">
+        <a href="#" class="youtube__sidebar-item youtube__sidebar-item--fondo_gris-acero">
+          <i class="youtube__sidebar-icono ri-settings-5-line"></i><span>Setting</span>
+        </a>
+        <a href="#" class="youtube__sidebar-item youtube__sidebar-item--fondo_gris-acero">
+          <i class="youtube__sidebar-icono ri-flag-line"></i><span>Report history</span>
+        </a>
+        <a href="#" class="youtube__sidebar-item youtube__sidebar-item--fondo_gris-acero">
+          <i class="youtube__sidebar-icono ri-question-line"></i><span>Help</span>
+        </a>
+        <a href="#" class="youtube__sidebar-item youtube__sidebar-item--fondo_gris-acero">
+          <i class="youtube__sidebar-icono ri-feedback-line"></i><span>Send feedback</span>
+        </a>
+        <hr class="youtube__sidebar-linea-separador">
+      </div>
     </aside>
-   
-
-
-
-    <!-- contenido principal -->
-    <main class="container">
-        <div class="chips-warpper">
-            <div class="chips">
-                <p>ALL</p>
-            </div>
-            <div class="chips">
-                <p>Php</p>
-            </div>
-            <div class="chips">
-                <p>Nmap</p>
-            </div>
-            <div class="chips">
-                <p>Kali</p>
-            </div>
-            <div class="chips">
-                <p>Javascript</p>
-            </div>
-            <div class="chips">
-                <p>Phyton</p>
-            </div>
-            <div class="chips"> 
-                <p>css</p>
-            </div>
-            <div class="chips">
-                <p>java</p>
-            </div>
-            <div class="chips">
-                <p>React</p>
-            </div>
-            <div class="chips">
-                <p>Red hat</p>
-            </div>
+    <!-- Main -->
+    <main class="youtube__content">
+      <div class="youtube__chips-wrapper">
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">ALL</p>
         </div>
-
-       <!--hasta aca copie -->
-        <!-- content  -->
-        <div class="video-container">
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-1.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-2.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-3.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-4.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-5.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-6.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-7.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-8.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-9.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-10.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-11.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-12.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-13.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-14.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-15.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-16.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-17.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-18.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-19.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-20.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-21.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video-container-cover">
-                <div class="video-content">
-                    <a href="#" class="video-box">
-                        <img src="img (1)/img/img-22.jpg" alt="imagen_sapo">
-                    </a>
-                    <div class="video-detail">
-                        <div class="chanel-logo">
-                            <img src="img (1)/img/john.jpg" alt="logo">
-                        </div>
-                        <div class="detail">
-                            <h3>Clon Youtube flexbox and grid css</h3>
-                            <div class="chanel-name">Jhon vangandr</div>
-                            <div class="views-up-load">
-                                <div class="view">28k views</div>
-                                <div class="upload">1 year ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">HTML</p>
         </div>
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">CSS</p>
+        </div>
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">Responsive design</p>
+        </div>
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">UI design</p>
+        </div>
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">JavaScript</p>
+        </div>
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">React</p>
+        </div>
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">UI/UX</p>
+        </div>
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">JAVA</p>
+        </div>
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">PHP</p>
+        </div>
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">Node JS</p>
+        </div>
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">Mysql</p>
+        </div>
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">Oracle</p>
+        </div>
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">UML</p>
+        </div>
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">Python</p>
+        </div>
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">C#</p>
+        </div>
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">Ruby</p>
+        </div>
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">TypeScript</p>
+        </div>
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">Erlang</p>
+        </div>
+        <div class="youtube__chips youtube__chips--fondo_gris_perla">
+          <p class="youtube__chips-texto">Pascal</p>
+        </div>
+      </div>
+      
+      <div class="youtube__video-container">
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-1.jpg" alt="imagen_1">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-2.jpg" alt="imagen_2">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-3.jpg" alt="imagen_3">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-4.jpg" alt="imagen_4">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-5.jpg" alt="imagen_5">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-6.jpg" alt="imagen_6">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-7.jpg" alt="imagen_7">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-8.jpg" alt="imagen_8">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-9.jpg" alt="imagen_9">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-10.jpg" alt="imagen_10">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-11.jpg" alt="imagen_11">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-12.jpg" alt="imagen_12">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-13.jpg" alt="imagen_13">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-14.jpg" alt="imagen_14">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-15.jpg" alt="imagen_15">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-16.jpg" alt="imagen_16">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-17.jpg" alt="imagen_17">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-18.jpg" alt="imagen_18">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-19.jpg" alt="imagen_19">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-20.jpg" alt="imagen_20">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-21.jpg" alt="imagen_21">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="youtube__video-container-cover">
+          <div class="youtube__video-content youtube__video-content--fondo-gris_slate">
+            <a href="#" class="youtube__video-box">
+              <img class="youtube__video-img" src="imagenes/img-22.jpg" alt="imagen_22">
+            </a>
+            <div class="youtube__video-detail">
+              <div class="youtube__chanel-logo">
+                <img class="youtube__chanel-img" src="imagenes/foto_perfil.jpg" alt="logo">
+              </div>
+              <div class="youtube__detail">
+                <h3 class="youtube__title">Clon Youtube Flexbox and Grid CSS</h3>
+                <div class="youtube__chanel-name">Dylan Bravo</div>
+                <div class="youtube__view-upload">
+                  <div class="youtube__views">30k views</div>
+                  <div class="youtube__upload">2 year ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-</body> 
+  </div>
+</body>
 </html>
