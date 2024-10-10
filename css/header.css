@@ -1,143 +1,119 @@
 
-/* area header   */
-.header{
-    /* declaramos el nombre al area  */
+/* encabezado de youtube */
+.youtube__header{
     grid-area: header;
-    /* abrimos propiedades fixed  
-    entre estas se encuentra top left entre otras
-
-    sirven para el pocionamiento
-    */
     position: fixed;
     top: 0;
     left: 0;
-    /* definimos un color y tamaño  a header */
-    background-color: #121212;
-    background-color: var();
-    height: 56px;
+    background-color: var(--negro_carbon);
     width: 100%;
-    /* colacomos un logo */
-    background-image: url();
-    /* align-content: space-evenly; */
-    display: flex;
-    padding-left: 10px;
-    padding-top: 10px;
+    height: 56px;
     justify-content: space-between;
-    gap: 6px;  /*pusimos un gap para darle espacio entre el item*/
-}
-
-.logo{
+    padding-left: 10px;
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 6px;
+  }
+  .youtube__logo-container{
     display: flex;
     align-items: center;
     gap: 6px;
-    margin-top: 6px;
-}
-.logo__img{
+  }
+  .youtube__icono_menu{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--blanco);
+  }
+  .youtube__logo{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+  }
+  .youtube__logo-titulo{
+    color: var(--blanco);
+    letter-spacing: -1px;
+    font-size: 1.5rem;
+  }
+  .youtube__logo-img{
+    width: 100%;
+    height: 100%;
+  }
+  .youtube__logo-contenedor{
+    position: relative;
+    height: 25px;
+    width: 30px;
+  }
+  .youtube__search-container{
     display: flex;
     align-items: center;
     gap: 10px;
-    align-content: center;
-    width: 300px;
-}
-.logo_container--colores_texto{
-    letter-spacing: -1px;
-    color: #fff;
-}
-
-
-/* Barra de navegacion */
-
-.search__container{
-    align-items: center;
-    display: flex;
-    align-items: center;
-    /* margin: 0 auto; */
-    gap: 6px;
-    /* width: 685px; */
-    position: static;
-    flex-wrap: 0.6;
-    flex-grow: 0.6;
-}
-
-
-.search__container_form{
-    position: relative;
+    flex: 0 1 685px;
+  }
+  .youtube__search-form{
     width: 100%;
-    display: flex;
-}
-
-
-
-.search__container_input{
     position: relative;
-    width: 500px;
-    background-color: var(--fondo_negro_comun);
-    color: #fff;
-    padding: 12px;
+    display: flex;
+  }
+  .youtube__search-input{
     height: 40px;
+    width: 100%;
+    background-color: var(--negro_ebano);
+    color: var(--blanco_humo);
+    padding: 12px;
     outline: none;
-    border: 1px solid var(--color_borde);
-    border-radius: 10px 0px  0px 10px;
-}
-
-
-
-
-.search__container button{
+    border: 1px solid var(--gris_semitransparente);
+    border-radius: 10px 0px 0px 10px;
+  }
+  .youtube__search-button,.youtube__mic-button{
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    background-color: var(--gris_pizarra);
+    color: var(--blanco);
+    outline: none;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    border: none;
+  }
+  .youtube__mic-button{
+    border-radius: 50%;
+  }
+  .youtube__profile-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .youtube__profile-container_icons{
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    color: var(--blanco);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.8s;
+  }
+  .youtube__profile-container_icons--fondo_gris_acero:hover{
+    background-color: var(--gris_acero);
+  }
+  
+  .youtube__profile-box{
+    position: relative;
     width: 40px;
     height: 40px;
-    background-color: var(--color_negro_barra);
-    background-color: #666161;
-    color: white;
-    border: none;
     cursor: pointer;
-}
-
-
-/* .search-container :last-child{
-    border-radius: 10px;
-}
-
-
-.search__container :last-of-type{
-    border-radius: 10px;
-}
-
-
-*/
-/*
-.search-container form ~ button{
-    border-radius: 50px;
-    color: #fff;
-    width: 50%;
-    height: 50%;
-}
-*/
-
-
-
-
-
-
-
-
-
-/*nou*/
-.contenedor__perfi{
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    align-content: center;
-}
-
-/*imagen de perfil*/
-.contenedor__perfil__image{
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
+    border-radius: 50%;
+  }
+  .youtube__profile-image{
+    border-radius: 50%;
+    width: 100%;
     height: 100%;
     object-fit: contain;
-    border-radius: 50px;
-}
-
+  }

@@ -1,61 +1,35 @@
-
-
-.container{
-    grid-area: container;
-    /* background-color: #060516; */
-}
-
-.container__chips{
-    /* overflow-x: scroll;
-    display: flex;
-    background-color: #121212;
-    padding-left: 14px;
-    border-top: 1px solid rgba(225, 225, 255, 225,0.1);
-    border-bottom: solid rgba(225, 225, 255, 225,0.1);
-    max-width: calc(100vw -240vw); */
-    max-width: calc(100vw -240px);
+.youtube__content{
+    grid-area: content;
+  }
+  .youtube__chips-wrapper{
+    max-width: calc(100vw - 240px);
     overflow-x: scroll;
-    background-color:#202020;
+    background-color: var(--negro_profundo);
     display: flex;
     padding-left: 14px;
-    border-top:  solid 1px rgba(225, 225, 255, 225,0.1);
-    border-bottom:  solid 1px rgba(225, 225, 255, 225,0.1);
-}
-
-
-.container__chips__text{
+    border-top: 1px solid var(--gris_semitransparente);
+    border-bottom: 1px solid var(--gris_semitransparente);
+  }
+  .youtube__chips{
     margin: 12px 6px;
+    background-color: var(--gris_slate);
     padding: 6px 12px;
-    color: #fff;
+    color: var(--blanco);
     cursor: pointer;
-    border-radius: 10px;
-    white-space: nowrap;  /*para la letra */
-    transition: 0.5s;
-    overflow-x: scroll;
-    background-color: #524b4b; 
-    /* padding: 6px;
-    margin: 12px 6px;
-    color: #fff;
-    background-color: #221f1f;
-    cursor: pointer;
-    border-radius: 10px;
+    border-radius: 15px;
     white-space: nowrap;
-    transition: .5s; */
-
-}
-
-.container__chips::-webkit-scrollbar-thumb{
-    background-color: #717171;
-}
-
-
-.container__chips::-webkit-scrollbar{
-    height:10px ;
-}
-
-
-.container__chips__text:hover{
-    background-color: #d4d4d4;
-}
-
-
+    transition: 0.5s;
+  }
+  .youtube__chips-texto{
+    font-size: 0.9rem;
+  }
+  .youtube__chips--fondo_gris_perla:hover{
+    background-color: var(--gris_perla);
+  }
+  .youtube__chips-wrapper::-webkit-scrollbar{
+    height: 6px;
+  }
+  .youtube__chips-wrapper:hover::-webkit-scrollbar-thumb{
+    background-color: var(--gris_oscuro_claro);
+  }
+  
