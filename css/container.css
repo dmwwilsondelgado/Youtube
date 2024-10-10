@@ -25,7 +25,7 @@
     border-radius: 12px;
     transition: 1s;
   }
-  .youtube__video-content--fondo-gris_slate:hover{
+  .youtube__video-content:hover{
     background-color: var(--GRIS_SCARLA);
   }
   .youtube__video-box{

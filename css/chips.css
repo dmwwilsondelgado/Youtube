@@ -23,7 +23,7 @@
   .youtube__chips-texto{
     font-size: 0.9rem;
   }
-  .youtube__chips--fondo_gris_perla:hover{
+  .youtube__chips:hover{
     background-color: var(--GRIS_PERLA);
   }
   .youtube__chips-wrapper::-webkit-scrollbar{

@@ -32,7 +32,7 @@
     margin-right: 24px;
     font-size: 1.5rem;
   }
-  .youtube__sidebar-item--fondo_gris-acero:hover{
+  .youtube__sidebar-item:hover{
     background-color: var(--GRIS_ACERO);
   }
   .youtube__sidebar-linea-separador{
