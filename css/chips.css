@@ -4,17 +4,17 @@
   .youtube__chips-wrapper{
     max-width: calc(100vw - 240px);
     overflow-x: scroll;
-    background-color: var(--negro_profundo);
+    background-color: var(--NEGRO_SUPER_profundo);
     display: flex;
     padding-left: 14px;
-    border-top: 1px solid var(--gris_semitransparente);
-    border-bottom: 1px solid var(--gris_semitransparente);
+    border-top: 1px solid var(--GRIS_SEMITRASPARENTE);
+    border-bottom: 1px solid var(--GRIS_SEMITRASPARENTE);
   }
   .youtube__chips{
     margin: 12px 6px;
-    background-color: var(--gris_slate);
+    background-color: var(--GRIS_SCARLA);
     padding: 6px 12px;
-    color: var(--blanco);
+    color: var(--BLANCO_PURO);
     cursor: pointer;
     border-radius: 15px;
     white-space: nowrap;
@@ -24,12 +24,12 @@
     font-size: 0.9rem;
   }
   .youtube__chips--fondo_gris_perla:hover{
-    background-color: var(--gris_perla);
+    background-color: var(--GRIS_PERLA);
   }
   .youtube__chips-wrapper::-webkit-scrollbar{
     height: 6px;
   }
   .youtube__chips-wrapper:hover::-webkit-scrollbar-thumb{
-    background-color: var(--gris_oscuro_claro);
+    background-color: var(--GRIS_OSCURO_CLARO);
   }
   

@@ -7,7 +7,7 @@
     height: calc(100vh - 118px);
     gap: 18px;
     padding: 20px;
-    background-color: var(--negro_profundo);
+    background-color: var(--NEGRO_PROFUNDO);
     overflow-y: scroll;
     align-content: start;
   }
@@ -26,7 +26,7 @@
     transition: 1s;
   }
   .youtube__video-content--fondo-gris_slate:hover{
-    background-color: var(--gris_slate);
+    background-color: var(--GRIS_SCARLA);
   }
   .youtube__video-box{
     position: relative;
@@ -42,7 +42,7 @@
   }
   .youtube__video-detail{
     display: flex;
-    color: var(--blanco);
+    color: var(--BLANCO_PURO);
     padding: 12px;
   }
   .youtube__chanel-logo{
@@ -69,12 +69,12 @@
   .youtube__chanel-name{
     font-size: 0.8rem;
     margin-top: 10px;
-    color: var(--gris_neutro);
+    color: var(--GRIS_NEUTRO);
   }
   .youtube__view-upload{
     display: flex;
     gap: 5px;
-    color: var(--gris_neutro);
+    color: var(--GRIS_NEUTRO);
     font-size: 0.8rem;
     margin-top: 4px;
   }

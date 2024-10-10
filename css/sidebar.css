@@ -2,7 +2,7 @@
 /* barra lateral de youtube */
 .youtube__sidebar{
     grid-area: sidebar;
-    background-color: var(--gris_sombra);
+    background-color: var(--GRIS_SOMBRA);
     padding-top: 10px;
     overflow-y: scroll;
   }
@@ -19,13 +19,13 @@
     border-radius: 10px;
     transition: 0.5s;
     text-decoration: none;
-    color: var(--blanco);
+    color: var(--BLANCO_PURO);
     font-size: 0.9rem;
   }
   .youtube__sidebar-title{
     font-size: 0.9rem;
     text-transform: uppercase;
-    color: var(--gris_claro);
+    color: var(--GRIS_CLARO);
     margin-left: 10px;
   }
   .youtube__sidebar-icono{
@@ -33,9 +33,9 @@
     font-size: 1.5rem;
   }
   .youtube__sidebar-item--fondo_gris-acero:hover{
-    background-color: var(--gris_acero);
+    background-color: var(--GRIS_ACERO);
   }
   .youtube__sidebar-linea-separador{
     margin: 12px 0;
-    border: solid 1px var(--gris_semitransparente);
+    border: solid 1px var(--GRIS_SEMITRASPARENTE);
   }

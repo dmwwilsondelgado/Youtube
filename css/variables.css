@@ -1,16 +1,16 @@
 :root{
-    --blanco:#fff;
-    --gris_claro:#aaaa;
-    --gris_semitransparente:rgba(255,255 ,255 ,0.2);
+    --BLANCO_PURO:#fff;/*sidebar entre otros  */
+    --GRIS_CLARO:#aaaa;/*sidebar entre otros  */
+    --GRIS_SEMITRASPARENTE:rgba(255,255 ,255 ,0.2);/*sidebar entre otros  */
     --GRIS_OSCURO_CLARO:#717171;  /*sidebar entre otros  */
-    --negro_carbon:#202020;
-    --negro_ebano:#121212;
-    --blanco_humo:#f2f2f2;
-    --gris_pizarra:#313131;
-    --gris_acero:#4a4a4a;
-    --gris_sombra:#212121;
-    --negro_profundo:#181818;
-    --gris_slate:#373737;
-    --gris_perla:#d4d4d4;
-    --gris_neutro:#aaa;
+    --NEGRO_CARBON:#202020;/*sidebar entre otros  */
+    --BLANCO_HUMO:#f2f2f2;/*sidebar entre otros  */
+    --GRIS_PIZARRA:#313131;/*sidebar entre otros  */
+    --GRIS_ACERO:#4a4a4a;/*sidebar entre otros  */
+    --GRIS_SOMBRA:#212121;/*sidebar entre otros  */
+    --NEGRO_SUPER_profundo:#181818;/*sidebar entre otros  */
+    --NEGRO_PROFUNDO:#121212;/*NEGRO EBANO SE LLAMABA   */
+    --GRIS_SCARLA:#373737;/*sidebar entre otros  */
+    --GRIS_PERLA:#d4d4d4;/*sidebar entre otros  */
+    --GRIS_NEUTRO:#aaa;/*sidebar entre otros  */
   }

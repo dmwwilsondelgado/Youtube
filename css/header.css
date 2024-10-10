@@ -1,11 +1,10 @@
-
 /* encabezado de youtube */
 .youtube__header{
     grid-area: header;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--negro_carbon);
+    background-color: var(--NEGRO_CARBON);
     width: 100%;
     height: 56px;
     justify-content: space-between;
@@ -23,7 +22,7 @@
   .youtube__icono_menu{
     font-size: 1.5rem;
     text-decoration: none;
-    color: var(--blanco);
+    color: var(--BLANCO_PURO);
   }
   .youtube__logo{
     display: flex;
@@ -32,7 +31,7 @@
     position: relative;
   }
   .youtube__logo-titulo{
-    color: var(--blanco);
+    color: var(--BLANCO_PURO);
     letter-spacing: -1px;
     font-size: 1.5rem;
   }
@@ -59,11 +58,11 @@
   .youtube__search-input{
     height: 40px;
     width: 100%;
-    background-color: var(--negro_ebano);
-    color: var(--blanco_humo);
+    background-color: var(--NEGRO_PROFUNDO);
+    color: var(--BLANCO_HUMO);
     padding: 12px;
     outline: none;
-    border: 1px solid var(--gris_semitransparente);
+    border: 1px solid var(--GRIS_SEMITRASPARENTE);
     border-radius: 10px 0px 0px 10px;
   }
   .youtube__search-button,.youtube__mic-button{
@@ -71,8 +70,8 @@
     min-width: 40px;
     height: 40px;
     font-size: 1.5rem;
-    background-color: var(--gris_pizarra);
-    color: var(--blanco);
+    background-color: var(--GRIS_PIZARRA);
+    color: var(--BLANCO_PURO);
     outline: none;
     border-radius: 0px 10px 10px 0px;
     cursor: pointer;
@@ -90,7 +89,7 @@
     width: 40px;
     min-width: 40px;
     height: 40px;
-    color: var(--blanco);
+    color: var(--BLANCO_PURO);
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -101,7 +100,7 @@
     transition: 0.8s;
   }
   .youtube__profile-container_icons--fondo_gris_acero:hover{
-    background-color: var(--gris_acero);
+    background-color: var(--GRIS_PERLA);
   }
   
   .youtube__profile-box{
